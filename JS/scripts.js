@@ -29,3 +29,17 @@ window.addEventListener("scroll", function () {
         nav.classList.remove("scrolled");
     }
 });
+const formulario = document.querySelector("form");
+
+formulario.addEventListener("submit", function(){
+    alert("¡Gracias por completar el formulario!");
+});
+const nombre = document.getElementById("nombre");
+
+if(nombre.value === ""){
+    alert("Debe ingresar su nombre");
+}
+document.getElementById("mensaje").innerHTML =
+"<div class='alert alert-success'>Consulta enviada correctamente.</div>";
+document.getElementById("mensaje").innerHTML =
+"<div class='alert alert-success'>¡Gracias por tu opinión!</div>";
